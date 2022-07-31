@@ -10,8 +10,8 @@ create table dept (
 	loc varchar(13) -- 部门地址
 );
 
-drop table dept;
-truncate table dept;
+-- drop table dept;
+-- truncate table dept;
 
 insert into dept values ( 10, "accounting", "new york");
 insert into dept values ( 20, "research", "dallas");
@@ -32,7 +32,7 @@ create table if not exists emp(
 
 alter table emp add constraint foreign key emp(deptno) references dept(deptno);
 
- drop table emp;
+drop table emp;
 
 insert into emp values(7369, 'smith', 'clerk',7902, '1980-12-17',800,null,20);
 insert into emp values(7499, 'allen', 'salesman' ,7698, '1981-02-20', 1600,300, 30);
